@@ -175,9 +175,34 @@ header {
     font-size: .9rem;
 }
 
-.icon {
-    font-size: 4rem;
-    color: var(--magenta);
+ul {
+    list-style-type: none;
+}
+
+
+.ul-curso ul li {
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    position: relative;
+}
+
+
+.ul-curso ul li:before {
+    background-color: #616d72;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 4rem;
+    width: 2rem;
+}
+
+.img-scrolldown {
+    transition: .3s;
+}
+
+.img-scrolldown:hover {
+    transform: scale(1.2);
 }
 
 .section-curso-title {
@@ -187,15 +212,23 @@ header {
 .p-curso {
     font-size: 1.6rem;
     text-align: justify;
-    
 }
 
 .border-p-curso {
     border-right: #616D72 1px solid;
 }
 
-.fsh {
-    font-size: 10rem;
+.subtitle-curso {
+    font-size: 1.6rem;
+    color: var(--magenta);
+}
+
+.vh-55 {
+    height: 55vh;
+}
+
+.matriz-title {
+    font-size: 4.5rem;
 }
 
 
@@ -239,5 +272,30 @@ header {
     .navbar-toggler:focus {
         box-shadow: none;
     }
+
+    .border-p-curso {
+        border-right: none;
+        border-bottom: #616D72 1px solid;
+    }
+
+    .p-curso {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .subtitle-curso {
+        font-size: 1.3rem;
+        color: var(--magenta);
+        position: absolute;
+        left: 1.5rem;
+        top: 116rem;
+    }
+
+    .vh-55 {
+        height: 100vh;
+    }
   
+    .section-curso-title {
+        font-size: 4rem;
+    }
 }
