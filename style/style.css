@@ -65,9 +65,10 @@ body {
 
 header {
     position: fixed;
+    z-index: 2;
 }
 
-.font {
+.font-roboto {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -231,6 +232,71 @@ ul {
     font-size: 4.5rem;
 }
 
+.subtitle-matriz {
+    font-size: 3rem;
+    padding-left: 10rem !important;
+}
+
+.ul-matriz ul li {
+    margin-bottom: 1rem;
+    padding-left: 0rem;
+    position: relative;
+}
+
+
+.ul-matriz ul li:before {
+    background-color: #616d72;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 2.5rem;
+    width: 8rem;
+}
+
+.accordion-button {
+    font-size: 2.5rem;
+    color: var(--light-gray);
+}
+
+.accordion {
+    --bs-accordion-color: transparent;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--light-gray);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-btn-color: transparent;
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230a58ca'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: 0;
+    --bs-accordion-btn-focus-box-shadow: 0;
+    --bs-accordion-active-color: var(--light-gray);
+    --bs-accordion-active-bg: transparent;
+}
+
+.matriz-accordion-title {
+    color: var(--magenta);
+    font-size: 1.6rem;
+}
+
+.matriz-accordion-border {
+    border-left: 1px solid var(--magenta);
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.matriz-accordion-p {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    color: var(--gray);
+}
+
 
 @media (max-width: 576px) {
 
@@ -297,5 +363,14 @@ ul {
   
     .section-curso-title {
         font-size: 4rem;
+    }
+
+    .matriz-title {
+        font-size: 3rem;
+    }
+
+    .subtitle-matriz {
+        font-size: 2rem;
+        padding-left: 6rem !important;
     }
 }
