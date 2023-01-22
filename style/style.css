@@ -274,7 +274,6 @@ ul {
     --bs-accordion-border-radius: 0;
     --bs-accordion-inner-border-radius: 0;
     --bs-accordion-btn-color: transparent;
-
     --bs-accordion-btn-bg: transparent;
     --bs-accordion-btn-icon-width: 4rem;
     --bs-accordion-btn-icon-transform: rotate(-180deg);
@@ -350,6 +349,8 @@ td {
     min-height: 75vh;
 }
 
+
+
 @media (max-width: 576px) {
 
     header {
@@ -401,12 +402,9 @@ td {
         text-align: justify;
     }
 
+
     .subtitle-curso {
-        font-size: 1.3rem;
-        color: var(--magenta);
-        position: absolute;
-        left: 1.5rem;
-        top: 116rem;
+        display: none;
     }
 
     .vh-55 {
@@ -424,5 +422,77 @@ td {
     .subtitle-matriz {
         font-size: 2rem;
         padding-left: 6rem !important;
+    }
+}
+
+@media (max-width: 1279px) {
+
+    .main-title {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .main-subtitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        --bs-btn-font-size: 1rem;
+    }
+
+    .main-scrolldown {
+        font-size: .8rem;
+    }
+
+    .img-scrolldown {
+        width: 30px;
+    }
+
+    .p-curso {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .section-curso-title {
+        font-size: 4rem;
+        margin-top: 12rem;
+    }
+
+    .vh-55 {
+        min-height: 100vh;
+    }
+
+    .matriz-title {
+        font-size: 4rem;
+    }
+
+    .subtitle-matriz {
+        font-size: 2.5rem;
+        padding-left: 6rem !important;
+    }
+        
+    .ul-matriz ul li:before {
+        width: 4rem;
+    }
+
+    .accordion-button {
+        font-size: 2rem;
+    }
+    
+    .accordion-body {
+        padding: 4rem;
+    }
+
+    #matriz .w-50 {
+        min-width: 75%;
+    }
+
+    #turmas .w-50 {
+        min-width: 75%;
     }
 }

@@ -1,4 +1,7 @@
 const nav = document.querySelector("#nav");
+const buttons = document.querySelectorAll("a");
+
+console.log(buttons);
 
 window.onscroll = function() {
     scroll();
