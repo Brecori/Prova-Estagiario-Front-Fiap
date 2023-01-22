@@ -415,13 +415,51 @@ td {
         font-size: 4rem;
     }
 
+    .ul-matriz ul li:before {
+        width: 4rem;
+    }
+
     .matriz-title {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .subtitle-matriz {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-left: 6rem !important;
+    }
+
+    #matriz .container {
+        min-width: 90% !important;
+    }
+
+    .matriz-accordion-p {
+        font-size: 1.2rem;
+        margin-left: .5rem;
+        color: var(--gray);
+    }
+
+    .matriz-accordion-title {
+        color: var(--magenta);
+        font-size: 1.4rem;
+    }
+
+    th {
+        font-size: 1rem;
+        padding: 4rem !important;
+    }
+    
+    
+    td {
+        font-size: .8rem;
+        padding: 4rem !important;
+    }
+    
+    .font-size-price {
+        font-size: 1rem;
+    }
+    
+    .asterisk {
+        font-size: .7rem;
     }
 }
 
