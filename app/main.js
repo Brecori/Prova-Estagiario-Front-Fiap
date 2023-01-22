@@ -14,6 +14,3 @@ function scroll() {
         nav.classList.add("bg-header-off");
     }
 }
-
-
-

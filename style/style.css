@@ -108,7 +108,7 @@ header {
 }
 
 .btn {
-    --bs-btn-padding-x: 4rem;
+    --bs-btn-padding-x: 5rem;
     --bs-btn-padding-y: 1.4rem;
     --bs-btn-font-family: "GothamHTF-Book";
     --bs-btn-font-weight: 500;
@@ -225,7 +225,7 @@ ul {
 }
 
 .vh-55 {
-    height: 55vh;
+    min-height: 55vh;
 }
 
 .matriz-title {
@@ -311,6 +311,44 @@ ul {
     color: var(--gray);
 }
 
+.pink-border {
+    border: var(--magenta) 2px solid;
+    width: 5rem;
+    position: absolute;
+    left: 47.5%;
+}
+
+th {
+    font-size: 1.4rem;
+    color: var(--magenta);
+    border: var(--dark-gray) solid 1px;  
+}
+
+
+td {
+    border: var(--dark-gray) solid 1px;
+    color: var(--light-gray);
+    font-size: 1.1rem;
+    
+}
+
+.font-size-price {
+    font-size: 1.4rem;
+}
+
+.table {
+    margin-top: 12rem;
+    border: var(--light-gray) solid 1px;
+}
+
+.asterisk {
+    font-size: 1.1rem;
+    color: var(--gray);
+}
+
+.vh-75 {
+    min-height: 75vh;
+}
 
 @media (max-width: 576px) {
 
@@ -372,7 +410,7 @@ ul {
     }
 
     .vh-55 {
-        height: 100vh;
+        min-height: 100vh;
     }
   
     .section-curso-title {
